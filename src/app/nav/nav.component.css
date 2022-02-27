@@ -1,0 +1,19 @@
+nav{
+    height: 100px;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3rem;
+}
+
+nav .title{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.cart{
+    padding: 1rem;
+    background-color: white;
+    font-size: 2rem;
+}

@@ -1,0 +1,10 @@
+button{
+    padding: .5rem 1rem;
+    background-color: lightblue;
+    border-radius: .5rem;
+    display: block;
+}
+
+.product{
+    margin-bottom: 1rem;
+}
