@@ -1,15 +1,20 @@
 <div class="products__container" *ngFor="let product of products">
-    <div class="product">
-        <a style="font-size: 1.5rem; font-weight: bold;" [title]="product.name + ' details'">
-            {{product.name}}
-        </a>
+  <a
+    style="font-size: 1.5rem; font-weight: bold"
+    [title]="product.name + ' details'"
+    [routerLink]="['/products', product.id]"
+  >
+    {{ product.name }}
+  </a>
 
-        <p *ngIf="product.description">
-            {{product.description}}
-        </p>
+  <p *ngIf="product.description">
+    {{ product.description }}
+  </p>
 
-        <button class="button" (click)="share()">Share</button>
+  <button class="button" (click)="share()">Share</button>
 
-        <app-product-alert [product]="product" (notify)="onNotify()"></app-product-alert>
-    </div>
+  <app-product-alert
+    [product]="product"
+    (notify)="onNotify()"
+  ></app-product-alert>
 </div>
